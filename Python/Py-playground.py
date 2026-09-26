@@ -35,3 +35,9 @@ sum_int_and_float = my_int + my_float
 
 print(sum_int_and_float) # 61.4
 print(type(sum_int_and_float)) # <class 'float'>
+
+# Augmented assignments
+greet = 'Hello'
+greet *= 3
+
+print(greet) # HelloHelloHello
