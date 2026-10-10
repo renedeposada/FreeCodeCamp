@@ -1,59 +1,23 @@
-print('My favorite programming languages are', 'Python', 'JavaScript', 'and', 'React')
+# Truthy and Falsy values
+is_citizen = True
+age = 25
 
-my_integer_var = 10
-print(type(my_integer_var))  # <class 'int'>
-
-account_balance = '12'
-print(isinstance(account_balance, int)) # False
-
-my_str_3 = """Multiline
-string"""
-print(my_str_3, type(my_str_3))
-
-msg = "It's a sunny day"
-quote = 'She said, "Hello World!"'
-
-num1 = 5
-num2 = 10
-print(f'The sum of {num1} and {num2} is {num1 + num2}')
-
-my_str = 'Hello world'
-print(my_str[1:4]) # ell
-
-my_str = 'Hello world'
-print(my_str[::-1]) # dlrow olleH
-
-my_str = 'hello world'
-
-uppercase_my_str = my_str.upper()
-print(uppercase_my_str)  # HELLO WORLD
-
-my_int = 56
-my_float = 5.4
-
-sum_int_and_float = my_int + my_float
-
-print(sum_int_and_float) # 61.4
-print(type(sum_int_and_float)) # <class 'float'>
-
-# Augmented assignments
-greet = 'Hello'
-greet *= 3
-
-print(greet) # HelloHelloHello
-
-# Conditional statements
-age = 2
-
-if age >= 65:
-    print('You are a senior citizen')
-elif age >= 30:
-    print('You are an adult in your prime')
-elif age >= 18:
-    print('You are a young adult')
-elif age >= 13:
-    print('You are a teenager')
-elif age >= 3:
-    print('You are a young child')
+if is_citizen and age >= 18:
+    print('You are eligible to vote') # You are eligible to vote
 else:
-    print('You are a toddler or an infant')
+    print('You are not eligible to vote')
+
+age = 19
+is_student = True
+
+if age < 18 or is_student:
+    print('You are eligible for a student discount') # You are eligible for a student discount
+else:
+    print('You are not eligible for a student discount')
+
+is_admin = False
+
+if not is_admin:
+    print('Access denied for non-administrators.') # Access denied for non-administrators.
+else:
+    print('Welcome, Administrator!')
